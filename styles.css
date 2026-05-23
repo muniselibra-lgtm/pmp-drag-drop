@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.game-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+.column {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+.draggable {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+.draggable.dragging {
+    opacity: 0.5;
+}
+.dropzone {
+    background: #e9ecef;
+    border: 2px dashed #6c757d;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+    min-height: 50px;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+}
+.shake { animation: shake 0.3s ease-in-out; background: #dc3545; }
